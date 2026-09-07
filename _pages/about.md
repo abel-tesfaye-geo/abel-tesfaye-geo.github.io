@@ -3,6 +3,11 @@ permalink: /about/
 title: "About"
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
-
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+Gold Medalist and Assistant Lecturer at Bahir Dar University, with a BSc in Land Administration and
+Surveying and hands-on expertise in UAV photogrammetry, LiDAR processing, machine learning-based
+geospatial analysis, and cloud-based Earth observation. Built Python and JavaScript workflows for urban
+spatial expansion research using Google Earth Engine, and designed and built a functional drone
+prototype. Actively engaged in international professional development through NASA ARSET, ESA EO
+College, and ITC University of Twente. Seeking the Copernicus Master in Digital Earth, specializing in
+Geovisualisation and Geocommunication, to advance cartographic and web-based visualization expertise
+and help build Africa's geospatial capacity from within
