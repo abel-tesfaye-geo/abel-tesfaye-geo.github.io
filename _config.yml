@@ -59,8 +59,7 @@ plugins:
 
 author:
   name   : "Abel Tesfaye"
-  avatar : "/assets/images/1788848703330_abel_photo.jpg"
-  bio    : "GIS and land administration specialist from Bahir Dar, Ethiopia, working toward a Master's in Cartography and Geospatial Data Engineering."
+  avatar : "/assets/images/1788848703330_abel_photo.jpg.jpg"
   location: "Bahir Dar University"
   links:
     - label: "Email"
