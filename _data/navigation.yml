@@ -1,5 +1,7 @@
-   main:
-     - title: "About"
-       url: /about/
-     - title: "Certificates"
-       url: /certificates/
+  main:
+  - title: "About"
+    url: /about/
+  - title: "CV"
+    url: /assets/images/Abel_Tesfaye_CV_CDE.pdf
+  - title: "Certificates"
+    url: /certificates/
