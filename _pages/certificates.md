@@ -5,35 +5,50 @@ permalink: /certificates/
 
 ## Esri Training
 
-**ArcGIS Online Basics** — 2h 5m, completed Sept 4, 2026
-![ArcGIS Online Basics](/assets/images/esri-arcgis-online-basics.png)
-
-**Getting Started with Data Management** — 1h 25m, completed Sept 7, 2026
-![Getting Started with Data Management](/assets/images/esri-data-management.png)
-
-**Telling Stories with GIS Maps** — 1h 25m, completed Sept 7, 2026
-![Telling Stories with GIS Maps](/assets/images/esri-storytelling-gis-maps.png)
-
-**Creating an ArcGIS StoryMaps Briefing** (Lab) — 2h 35m, completed Sept 8, 2026
-![Creating an ArcGIS StoryMaps Briefing](/assets/images/esri-storymaps-briefing.png)
-
-**Getting Started with Mapping and Visualization** — 1h 15m, completed Sept 8, 2026
-![Getting Started with Mapping and Visualization](/assets/images/esri-mapping-visualization.png)
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1em;">
+  <img src="/assets/images/esri-arcgis-online-basics.png" style="width: 100%; border-radius: 6px;">
+  <img src="/assets/images/esri-data-management.png" style="width: 100%; border-radius: 6px;">
+  <img src="/assets/images/esri-storytelling-gis-maps.png" style="width: 100%; border-radius: 6px;">
+  <img src="/assets/images/esri-storymaps-briefing.png" style="width: 100%; border-radius: 6px;">
+  <img src="/assets/images/esri-mapping-visualization.png" style="width: 100%; border-radius: 6px;">
+</div>
 
 ---
 
-## NASA — Applied Remote Sensing Training (ARSET)
+## NASA
 
-*Certificates coming soon.*
-
----
-
-## ITC University of Twente / Geoversity
-
-*Certificates coming soon.*
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1em;">
+  <img src="/assets/images/nasa-fundamentals-remote-sensing.png" style="width: 100%; border-radius: 6px;">
+  <img src="/assets/images/nasa-earth-science-applications.png" style="width: 100%; border-radius: 6px;">
+  <img src="/assets/images/nasa-hyperspectral-data.png" style="width: 100%; border-radius: 6px;">
+</div>
 
 ---
 
-## European Space Agency (ESA) EO College
+## ITC / Geoversity
 
-*Certificates coming soon.*
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1em;">
+  <img src="/assets/images/itc-do-no-harm-drone-ethics.png" style="width: 100%; border-radius: 6px;">
+  <img src="/assets/images/itc-copernicus-sentinel-data.png" style="width: 100%; border-radius: 6px;">
+</div>
+
+---
+
+## ESA EO College
+
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1em;">
+  <img src="/assets/images/eo-college-machine-learning.png" style="width: 100%; border-radius: 6px;">
+</div>
+
+---
+
+## Others
+
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1em;">
+  <img src="/assets/images/other-geo-university-opencv-python.jpg" style="width: 100%; border-radius: 6px;">
+  <img src="/assets/images/other-3is-gis-humanitarian.png" style="width: 100%; border-radius: 6px;">
+  <img src="/assets/images/other-bdu-best-scorer-award.jpg" style="width: 100%; border-radius: 6px;">
+  <img src="/assets/images/other-bdu-best-exam-scorer-award.jpg" style="width: 100%; border-radius: 6px;">
+  <img src="/assets/images/other-bdu-food-affairs-recognition.jpg" style="width: 100%; border-radius: 6px;">
+  <img src="/assets/images/other-british-council-peace-education.jpg" style="width: 100%; border-radius: 6px;">
+</div>
