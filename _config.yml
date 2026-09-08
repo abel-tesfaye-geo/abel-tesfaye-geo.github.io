@@ -59,33 +59,25 @@ plugins:
 
 author:
   name   : "Abel Tesfaye"
-  avatar : "/assets/images/IMG_1649.JPG"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  avatar : "/assets/images/1788848703330_abel_photo.jpg"
+  bio    : "GIS and land administration specialist from Bahir Dar, Ethiopia, working toward a Master's in Cartography and Geospatial Data Engineering."
+  location: "Bahir Dar University"
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:abel.tesfaye@bdu.edu.et"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/abel-tesfaye-7756673b9"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/abel-tesfaye-geo"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/abel-tesfaye-geo"
 
 defaults:
   # _posts
