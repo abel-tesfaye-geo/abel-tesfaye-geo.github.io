@@ -24,47 +24,74 @@ classes: wide
   border-radius: 10px;
   padding: 0.8em;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  cursor: zoom-in;
 }
 .cert-card img {
   width: 100%;
   border-radius: 6px;
   display: block;
 }
+#cert-lightbox {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.9);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+}
+#cert-lightbox img {
+  max-width: 92%;
+  max-height: 92%;
+  border-radius: 6px;
+}
 </style>
 
 <div class="cert-section-title">Esri Training</div>
 <div class="cert-grid">
-  <div class="cert-card"><img src="/assets/images/esri-arcgis-online-basics.png"></div>
-  <div class="cert-card"><img src="/assets/images/esri-data-management.png"></div>
-  <div class="cert-card"><img src="/assets/images/esri-storytelling-gis-maps.png"></div>
-  <div class="cert-card"><img src="/assets/images/esri-storymaps-briefing.png"></div>
-  <div class="cert-card"><img src="/assets/images/esri-mapping-visualization.png"></div>
+  <div class="cert-card" onclick="openCertLightbox('/assets/images/esri-arcgis-online-basics.png')"><img src="/assets/images/esri-arcgis-online-basics.png"></div>
+  <div class="cert-card" onclick="openCertLightbox('/assets/images/esri-data-management.png')"><img src="/assets/images/esri-data-management.png"></div>
+  <div class="cert-card" onclick="openCertLightbox('/assets/images/esri-storytelling-gis-maps.png')"><img src="/assets/images/esri-storytelling-gis-maps.png"></div>
+  <div class="cert-card" onclick="openCertLightbox('/assets/images/esri-storymaps-briefing.png')"><img src="/assets/images/esri-storymaps-briefing.png"></div>
+  <div class="cert-card" onclick="openCertLightbox('/assets/images/esri-mapping-visualization.png')"><img src="/assets/images/esri-mapping-visualization.png"></div>
 </div>
 
 <div class="cert-section-title">NASA</div>
 <div class="cert-grid">
-  <div class="cert-card"><img src="/assets/images/nasa-fundamentals-remote-sensing.png"></div>
-  <div class="cert-card"><img src="/assets/images/nasa-earth-science-applications.png"></div>
-  <div class="cert-card"><img src="/assets/images/nasa-hyperspectral-data.png"></div>
+  <div class="cert-card" onclick="openCertLightbox('/assets/images/nasa-fundamentals-remote-sensing.png')"><img src="/assets/images/nasa-fundamentals-remote-sensing.png"></div>
+  <div class="cert-card" onclick="openCertLightbox('/assets/images/nasa-earth-science-applications.png')"><img src="/assets/images/nasa-earth-science-applications.png"></div>
+  <div class="cert-card" onclick="openCertLightbox('/assets/images/nasa-hyperspectral-data.png')"><img src="/assets/images/nasa-hyperspectral-data.png"></div>
 </div>
 
 <div class="cert-section-title">ITC / Geoversity</div>
 <div class="cert-grid">
-  <div class="cert-card"><img src="/assets/images/itc-do-no-harm-drone-ethics.png"></div>
-  <div class="cert-card"><img src="/assets/images/itc-copernicus-sentinel-data.png"></div>
+  <div class="cert-card" onclick="openCertLightbox('/assets/images/itc-do-no-harm-drone-ethics.png')"><img src="/assets/images/itc-do-no-harm-drone-ethics.png"></div>
+  <div class="cert-card" onclick="openCertLightbox('/assets/images/itc-copernicus-sentinel-data.png')"><img src="/assets/images/itc-copernicus-sentinel-data.png"></div>
 </div>
 
 <div class="cert-section-title">ESA EO College</div>
 <div class="cert-grid">
-  <div class="cert-card"><img src="/assets/images/eo-college-machine-learning.png"></div>
+  <div class="cert-card" onclick="openCertLightbox('/assets/images/eo-college-machine-learning.png')"><img src="/assets/images/eo-college-machine-learning.png"></div>
 </div>
 
 <div class="cert-section-title">Others</div>
 <div class="cert-grid">
-  <div class="cert-card"><img src="/assets/images/other-geo-university-opencv-python.jpg"></div>
-  <div class="cert-card"><img src="/assets/images/other-3is-gis-humanitarian.png"></div>
-  <div class="cert-card"><img src="/assets/images/other-bdu-best-scorer-award.jpg"></div>
-  <div class="cert-card"><img src="/assets/images/other-bdu-best-exam-scorer-award.jpg"></div>
-  <div class="cert-card"><img src="/assets/images/other-bdu-food-affairs-recognition.jpg"></div>
-  <div class="cert-card"><img src="/assets/images/other-british-council-peace-education.jpg"></div>
+  <div class="cert-card" onclick="openCertLightbox('/assets/images/other-geo-university-opencv-python.jpg')"><img src="/assets/images/other-geo-university-opencv-python.jpg"></div>
+  <div class="cert-card" onclick="openCertLightbox('/assets/images/other-3is-gis-humanitarian.png')"><img src="/assets/images/other-3is-gis-humanitarian.png"></div>
+  <div class="cert-card" onclick="openCertLightbox('/assets/images/other-bdu-best-scorer-award.jpg')"><img src="/assets/images/other-bdu-best-scorer-award.jpg"></div>
+  <div class="cert-card" onclick="openCertLightbox('/assets/images/other-bdu-best-exam-scorer-award.jpg')"><img src="/assets/images/other-bdu-best-exam-scorer-award.jpg"></div>
+  <div class="cert-card" onclick="openCertLightbox('/assets/images/other-bdu-food-affairs-recognition.jpg')"><img src="/assets/images/other-bdu-food-affairs-recognition.jpg"></div>
+  <div class="cert-card" onclick="openCertLightbox('/assets/images/other-british-council-peace-education.jpg')"><img src="/assets/images/other-british-council-peace-education.jpg"></div>
 </div>
+
+<div id="cert-lightbox" onclick="this.style.display='none'">
+  <img id="cert-lightbox-img" src="">
+</div>
+
+<script>
+function openCertLightbox(src) {
+  document.getElementById('cert-lightbox-img').src = src;
+  document.getElementById('cert-lightbox').style.display = 'flex';
+}
+</script>
