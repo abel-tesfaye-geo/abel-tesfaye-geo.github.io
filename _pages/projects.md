@@ -23,19 +23,6 @@ classes: wide
   object-fit: cover;
   display: block;
 }
-.proj-thumb-placeholder {
-  width: 100%;
-  height: 200px;
-  background: linear-gradient(135deg, #4a5568, #2d3748);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 1.1em;
-  text-align: center;
-  padding: 1em;
-  box-sizing: border-box;
-}
 .proj-body {
   padding: 1.2em;
 }
@@ -60,9 +47,7 @@ classes: wide
 <div class="proj-grid">
 
   <div class="proj-card">
-      <div class="proj-card">
     <img class="proj-thumb" src="/assets/images/gas-detection-thumbnail.png">
-    <div class="proj-body">
     <div class="proj-body">
       <div class="proj-tags">Google Earth Engine · Sentinel-5P TROPOMI · JavaScript</div>
       <strong>Bahir Dar Atmospheric Watch</strong>
@@ -75,9 +60,7 @@ classes: wide
   </div>
 
   <div class="proj-card">
-      <div class="proj-card">
     <img class="proj-thumb" src="/assets/images/structural-plan-bdr-thumbnail.png">
-    <div class="proj-body">
     <div class="proj-body">
       <div class="proj-tags">Esri File Geodatabase · GIS · Field Survey</div>
       <strong>Bahir Dar Structural Plan Basemap</strong>
@@ -98,16 +81,16 @@ classes: wide
     </div>
   </div>
 
-     <div class="proj-card">
-     <img class="proj-thumb" src="/assets/images/bdr_classified_2024.png">
-     <div class="proj-body">
-       <div class="proj-tags">Google Earth Engine · Random Forest · Sentinel Imagery</div>
-       <strong>Urban Spatial Expansion & Land Cover Classification, Bahir Dar</strong>
-       <p>Applied Google Earth Engine and a Random Forest classifier to model land cover and quantify urban spatial expansion in Bahir Dar City. Findings were presented at a departmental research seminar.</p>
-       <div class="proj-links">
-         <a href="/urban-expansion/">View Interactive Map ↗</a>
-       </div>
-     </div>
-   </div>
+  <div class="proj-card">
+    <img class="proj-thumb" src="/assets/images/bdr_classified_2024.png">
+    <div class="proj-body">
+      <div class="proj-tags">Google Earth Engine · Random Forest · Sentinel Imagery</div>
+      <strong>Urban Spatial Expansion & Land Cover Classification, Bahir Dar</strong>
+      <p>Applied Google Earth Engine and a Random Forest classifier to model land cover and quantify urban spatial expansion in Bahir Dar City. Findings were presented at a departmental research seminar.</p>
+      <div class="proj-links">
+        <a href="/urban-expansion/">View Interactive Map ↗</a>
+      </div>
+    </div>
+  </div>
 
 </div>
