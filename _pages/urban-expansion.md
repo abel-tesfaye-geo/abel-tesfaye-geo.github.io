@@ -15,9 +15,9 @@ classes: wide
 
 <div style="margin-top:1em; display:flex; flex-wrap:wrap; gap:1.5em; font-size:0.9em;">
   <span><span style="display:inline-block;width:14px;height:14px;background:#2563eb;border-radius:3px;"></span> Water</span>
-  <span><span style="display:inline-block;width:14px;height:14px;background:#228b22;border-radius:3px;"></span> Vegetation</span>
-  <span><span style="display:inline-block;width:14px;height:14px;background:#c81e1e;border-radius:3px;"></span> Built-up</span>
-  <span><span style="display:inline-block;width:14px;height:14px;background:#c29a5c;border-radius:3px;"></span> Bare Soil</span>
+  <span><span style="display:inline-block;width:14px;height:14px;background:#228b22;border-radius:3px;"></span> Built-up</span>
+  <span><span style="display:inline-block;width:14px;height:14px;background:#c81e1e;border-radius:3px;"></span> Vegetation</span>
+  <span><span style="display:inline-block;width:14px;height:14px;background:#c29a5c;border-radius:3px;"></span> Cropland</span>
   <span><span style="display:inline-block;width:14px;height:14px;background:#f0c828;border-radius:3px;"></span> Other / Wetland</span>
 </div>
 
