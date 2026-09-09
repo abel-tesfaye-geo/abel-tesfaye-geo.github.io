@@ -60,7 +60,9 @@ classes: wide
 <div class="proj-grid">
 
   <div class="proj-card">
-    <div class="proj-thumb-placeholder">Bahir Dar Atmospheric Watch<br>Sentinel-5P</div>
+      <div class="proj-card">
+    <img class="proj-thumb" src="/assets/images/gas-detection-thumbnail.png">
+    <div class="proj-body">
     <div class="proj-body">
       <div class="proj-tags">Google Earth Engine · Sentinel-5P TROPOMI · JavaScript</div>
       <strong>Bahir Dar Atmospheric Watch</strong>
@@ -73,7 +75,9 @@ classes: wide
   </div>
 
   <div class="proj-card">
-    <div class="proj-thumb-placeholder">Bahir Dar Basemap<br>Field Survey 2018–2020</div>
+      <div class="proj-card">
+    <img class="proj-thumb" src="/assets/images/structural-plan-bdr-thumbnail.png">
+    <div class="proj-body">
     <div class="proj-body">
       <div class="proj-tags">Esri File Geodatabase · GIS · Field Survey</div>
       <strong>Bahir Dar Structural Plan Basemap</strong>
