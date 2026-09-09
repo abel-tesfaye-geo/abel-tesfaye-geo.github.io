@@ -30,4 +30,34 @@ a {
 a:hover {
   color: #a83a0d;
 }
+
+@media (min-width: 925px) {
+  .sidebar {
+    width: 160px !important;
+    margin-right: -160px !important;
+  }
+  .page {
+    width: calc(100% - 160px) !important;
+    padding-right: 160px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sidebar {
+    width: 180px !important;
+    margin-right: -180px !important;
+  }
+  .page {
+    width: calc(100% - 180px) !important;
+    padding-right: 180px !important;
+  }
+}
+
+.author__avatar img {
+  max-width: 110px !important;
+}
+
+.author__content, .author__urls-wrapper {
+  font-size: 0.9em;
+}
 </style>
