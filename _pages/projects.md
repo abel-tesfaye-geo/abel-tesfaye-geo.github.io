@@ -93,7 +93,7 @@ classes: wide
     </div>
   </div>
   <div class="proj-card">
-    <img class="proj-thumb" src="/assets/images/tis-abay-thumbnail.png">
+    <img class="proj-thumb" src="/assets/images/tis-abay-thumbnail.png.webp">
     <div class="proj-body">
       <div class="proj-tags">ArcGIS StoryMaps · Remote Sensing · Scrollytelling</div>
       <strong>Tis Abay: Where the Blue Nile Smokes</strong>
