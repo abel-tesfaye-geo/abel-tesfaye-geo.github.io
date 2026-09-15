@@ -92,5 +92,15 @@ classes: wide
       </div>
     </div>
   </div>
-
+  <div class="proj-card">
+    <img class="proj-thumb" src="/assets/images/tis-abay-thumbnail.png">
+    <div class="proj-body">
+      <div class="proj-tags">ArcGIS StoryMaps · Remote Sensing · Scrollytelling</div>
+      <strong>Tis Abay: Where the Blue Nile Smokes</strong>
+      <p>An interactive story map tracing how the Blue Nile Falls are quietly reshaped by upstream diversion at the Chara Chara weir and the Tis Abay hydropower stations.</p>
+      <div class="proj-links">
+        <a href="https://arcg.is/1f8Oee3" target="_blank">View Live Story ↗</a>
+      </div>
+    </div>
+  </div>
 </div>
