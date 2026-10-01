@@ -113,9 +113,9 @@ classes: wide
   <div class="proj-card">
     <img class="proj-thumb" src="/assets/images/uav-3d-terrain-cover.png">
     <div class="proj-body">
-      <div class="proj-tags">Agisoft Metashape · DJI Mavic 3E · UAV Photogrammetry · Digital Twin</div>
-      <strong>UAV 3D Terrain Reconstruction</strong>
-      <p>A dense point cloud reconstructed in Agisoft Metashape from DJI Mavic 3E aerial imagery — 91,341 points captured across a structured flight grid, processed into a georeferenced 3D model and orthophoto for terrain and infrastructure visualization on the Bahir Dar City Structural Plan.</p>
+      <div class="proj-tags">DJI Mavic 3E · Agisoft Metashape · One3D · Digital Twin</div>
+      <strong>3D Digital Twin Generation – Addis Ababa, Ethiopia</strong>
+      <p>Generated a 3D digital twin of a site in Addis Ababa, Ethiopia, using aerial imagery captured with a DJI Mavic 3E drone. The imagery was processed in Agisoft Metashape and One3D into an interactive 3D model for site visualization and geospatial analysis.</p>
       <div class="proj-links">
         <a href="#" class="proj-live" onclick="openTwin(); return false;">Explore Live 3D Twin ↗</a>
         <a href="/vlog/">Behind the Scenes ↗</a>
@@ -149,7 +149,7 @@ classes: wide
 
 <div id="twin-modal">
   <div class="twin-bar">
-    <span>UAV 3D Terrain Reconstruction · Interactive Digital Twin</span>
+    <span>3D Digital Twin · Addis Ababa, Ethiopia</span>
     <span>
       <a href="https://app.one3d.ai/twins/67121?invcode=fHImPHkk" target="_blank" rel="noopener">Open in new tab</a>
       <button onclick="closeTwin()">✕ Close</button>
