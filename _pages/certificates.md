@@ -31,6 +31,19 @@ classes: wide
   border-radius: 6px;
   display: block;
 }
+.cert-pdf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 160px;
+  text-decoration: none;
+  color: #222;
+  cursor: pointer;
+}
+.cert-pdf strong { font-size: 1em; margin-bottom: 0.4em; }
+.cert-pdf span { font-size: 0.85em; color: #2D6A4F; }
 #cert-lightbox {
   display: none;
   position: fixed;
@@ -46,6 +59,9 @@ classes: wide
   max-height: 92%;
   border-radius: 6px;
 }
+@media (max-width: 800px) {
+  .cert-grid { grid-template-columns: 1fr; }
+}
 </style>
 
 <div class="cert-section-title">Esri Training</div>
@@ -55,9 +71,9 @@ classes: wide
   <div class="cert-card" onclick="openCertLightbox('/assets/images/esri-storytelling-gis-maps.png')"><img src="/assets/images/esri-storytelling-gis-maps.png"></div>
   <div class="cert-card" onclick="openCertLightbox('/assets/images/esri-storymaps-briefing.png')"><img src="/assets/images/esri-storymaps-briefing.png"></div>
   <div class="cert-card" onclick="openCertLightbox('/assets/images/esri-mapping-visualization.png')"><img src="/assets/images/esri-mapping-visualization.png"></div>
-  <div class="cert-card" onclick="openCertLightbox('/assets/images/esri-dividing-parcels-parcel-fabric.png')"><img src="/assets/images/esri-dividing-parcels-parcel-fabric.png" alt="Dividing Parcels in a Parcel Fabric Using ArcGIS Pro"></div>
-  <div class="cert-card" onclick="openCertLightbox('/assets/images/esri-imagery-mooc.png')"><img src="/assets/images/esri-imagery-mooc.png" alt="The ArcGIS Imagery MOOC: Foundations and Frontiers"></div>
-  <div class="cert-card" onclick="openCertLightbox('/assets/images/esri-getting-started-imagery-rs.png')"><img src="/assets/images/esri-getting-started-imagery-rs.png" alt="Getting Started with Imagery and Remote Sensing"></div>
+  <a class="cert-card cert-pdf" href="/assets/images/esri-dividing-parcels-parcel-fabric.png.pdf" target="_blank" rel="noopener"><strong>Dividing Parcels in a Parcel Fabric Using ArcGIS Pro</strong><span>View certificate (PDF)</span></a>
+  <a class="cert-card cert-pdf" href="/assets/images/esri-imagery-mooc.png.pdf" target="_blank" rel="noopener"><strong>The ArcGIS Imagery MOOC: Foundations and Frontiers</strong><span>View certificate (PDF)</span></a>
+  <a class="cert-card cert-pdf" href="/assets/images/esri-getting-started-imagery-rs.png.pdf" target="_blank" rel="noopener"><strong>Getting Started with Imagery and Remote Sensing</strong><span>View certificate (PDF)</span></a>
 </div>
 
 <div class="cert-section-title">NASA</div>
