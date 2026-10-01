@@ -55,6 +55,9 @@ classes: wide
   <div class="cert-card" onclick="openCertLightbox('/assets/images/esri-storytelling-gis-maps.png')"><img src="/assets/images/esri-storytelling-gis-maps.png"></div>
   <div class="cert-card" onclick="openCertLightbox('/assets/images/esri-storymaps-briefing.png')"><img src="/assets/images/esri-storymaps-briefing.png"></div>
   <div class="cert-card" onclick="openCertLightbox('/assets/images/esri-mapping-visualization.png')"><img src="/assets/images/esri-mapping-visualization.png"></div>
+  <div class="cert-card" onclick="openCertLightbox('/assets/images/esri-dividing-parcels-parcel-fabric.png')"><img src="/assets/images/esri-dividing-parcels-parcel-fabric.png" alt="Dividing Parcels in a Parcel Fabric Using ArcGIS Pro"></div>
+  <div class="cert-card" onclick="openCertLightbox('/assets/images/esri-imagery-mooc.png')"><img src="/assets/images/esri-imagery-mooc.png" alt="The ArcGIS Imagery MOOC: Foundations and Frontiers"></div>
+  <div class="cert-card" onclick="openCertLightbox('/assets/images/esri-getting-started-imagery-rs.png')"><img src="/assets/images/esri-getting-started-imagery-rs.png" alt="Getting Started with Imagery and Remote Sensing"></div>
 </div>
 
 <div class="cert-section-title">NASA</div>
@@ -83,6 +86,8 @@ classes: wide
   <div class="cert-card" onclick="openCertLightbox('/assets/images/other-bdu-best-exam-scorer-award.jpg')"><img src="/assets/images/other-bdu-best-exam-scorer-award.jpg"></div>
   <div class="cert-card" onclick="openCertLightbox('/assets/images/other-bdu-food-affairs-recognition.jpg')"><img src="/assets/images/other-bdu-food-affairs-recognition.jpg"></div>
   <div class="cert-card" onclick="openCertLightbox('/assets/images/other-british-council-peace-education.jpg')"><img src="/assets/images/other-british-council-peace-education.jpg"></div>
+  <div class="cert-card" onclick="openCertLightbox('/assets/images/other-ilasa.jpg')"><img src="/assets/images/other-ilasa.jpg" alt="ILASA"></div>
+  <div class="cert-card" onclick="openCertLightbox('/assets/images/other-class-representative.jpg')"><img src="/assets/images/other-class-representative.jpg" alt="Class Representative"></div>
 </div>
 
 <div id="cert-lightbox" onclick="this.style.display='none'">
