@@ -42,7 +42,13 @@ classes: wide
   .vlog-grid { grid-template-columns: 1fr; }
 }
 </style>
+## Building a Digital Twin, Behind the Screens
 
+My workstation is two screens side by side. On one I run the photogrammetry software, and on the other I check the model in 3D. A 3D mouse and 3D glasses let me move through the data instead of just looking at it. The input is Mavic 3E drone imagery from a site in Sululta, Addis Ababa, Ethiopia.
+
+Hours of flight lines become a dense point cloud, then a georeferenced 3D model and orthophoto. In the end it becomes something anyone can open and explore: a live, interactive digital twin of the site.
+
+[Explore the interactive 3D model →](/projects/uav-3d-terrain-reconstruction/)
 <div class="vlog-grid">
   <div class="vlog-card" onclick="openVlogLightbox('/assets/images/vlog-1.jpg.png')"><img src="/assets/images/vlog-1.jpg.png" alt="Vlog 1"></div>
   <div class="vlog-card" onclick="openVlogLightbox('/assets/images/vlog-2.jpg.png')"><img src="/assets/images/vlog-2.jpg.png" alt="Vlog 2"></div>
