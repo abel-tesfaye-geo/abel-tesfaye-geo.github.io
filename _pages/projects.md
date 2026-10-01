@@ -42,6 +42,44 @@ classes: wide
   text-decoration: none;
   font-size: 0.9em;
 }
+.proj-links a.proj-live {
+  background: #2D6A4F;
+  font-weight: 600;
+}
+#twin-modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.92);
+  z-index: 9999;
+  flex-direction: column;
+}
+.twin-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7em 1.2em;
+  color: #fff;
+}
+.twin-bar a, .twin-bar button {
+  color: #fff !important;
+  background: #2D6A4F;
+  border: none;
+  border-radius: 6px;
+  padding: 0.45em 1em;
+  font-size: 0.9em;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 0.6em;
+}
+#twin-modal iframe {
+  flex: 1;
+  width: 100%;
+  border: 0;
+}
+@media (max-width: 800px) {
+  .proj-grid { grid-template-columns: 1fr; }
+}
 </style>
 
 <div class="proj-grid">
@@ -73,11 +111,15 @@ classes: wide
   </div>
 
   <div class="proj-card">
-    <img class="proj-thumb" src="/assets/images/1788847547225_image.png">
+    <img class="proj-thumb" src="/assets/images/uav-3d-terrain-cover.png">
     <div class="proj-body">
-      <div class="proj-tags">Agisoft Metashape · DJI Mavic 3E · UAV Photogrammetry</div>
+      <div class="proj-tags">Agisoft Metashape · DJI Mavic 3E · UAV Photogrammetry · Digital Twin</div>
       <strong>UAV 3D Terrain Reconstruction</strong>
       <p>A dense point cloud reconstructed in Agisoft Metashape from DJI Mavic 3E aerial imagery — 91,341 points captured across a structured flight grid, processed into a georeferenced 3D model and orthophoto for terrain and infrastructure visualization on the Bahir Dar City Structural Plan.</p>
+      <div class="proj-links">
+        <a href="#" class="proj-live" onclick="openTwin(); return false;">Explore Live 3D Twin ↗</a>
+        <a href="/vlog/">Behind the Scenes ↗</a>
+      </div>
     </div>
   </div>
 
@@ -104,3 +146,26 @@ classes: wide
     </div>
   </div>
 </div>
+
+<div id="twin-modal">
+  <div class="twin-bar">
+    <span>UAV 3D Terrain Reconstruction · Interactive Digital Twin</span>
+    <span>
+      <a href="https://app.one3d.ai/twins/67121?invcode=fHImPHkk" target="_blank" rel="noopener">Open in new tab</a>
+      <button onclick="closeTwin()">✕ Close</button>
+    </span>
+  </div>
+  <iframe id="twin-frame" src="" allowfullscreen title="Interactive 3D digital twin"></iframe>
+</div>
+
+<script>
+function openTwin() {
+  document.getElementById('twin-frame').src = 'https://app.one3d.ai/twins/67121?invcode=fHImPHkk';
+  document.getElementById('twin-modal').style.display = 'flex';
+}
+function closeTwin() {
+  document.getElementById('twin-modal').style.display = 'none';
+  document.getElementById('twin-frame').src = '';
+}
+document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeTwin(); });
+</script>
