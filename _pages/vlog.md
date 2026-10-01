@@ -44,9 +44,9 @@ classes: wide
 </style>
 
 <div class="vlog-grid">
-  <div class="vlog-card" onclick="openVlogLightbox('/assets/images/vlog-1.jpg')"><img src="/assets/images/vlog-1.jpg" alt="Vlog 1"></div>
-  <div class="vlog-card" onclick="openVlogLightbox('/assets/images/vlog-2.jpg')"><img src="/assets/images/vlog-2.jpg" alt="Vlog 2"></div>
-  <div class="vlog-card" onclick="openVlogLightbox('/assets/images/vlog-3.jpg')"><img src="/assets/images/vlog-3.jpg" alt="Vlog 3"></div>
+  <div class="vlog-card" onclick="openVlogLightbox('/assets/images/vlog-1.jpg.png')"><img src="/assets/images/vlog-1.jpg.png" alt="Vlog 1"></div>
+  <div class="vlog-card" onclick="openVlogLightbox('/assets/images/vlog-2.jpg.png')"><img src="/assets/images/vlog-2.jpg.png" alt="Vlog 2"></div>
+  <div class="vlog-card" onclick="openVlogLightbox('/assets/images/vlog-3.jpg.jpg')"><img src="/assets/images/vlog-3.jpg.jpg" alt="Vlog 3"></div>
 </div>
 
 <div id="vlog-lightbox" onclick="this.style.display='none'">
