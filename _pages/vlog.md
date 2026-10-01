@@ -42,13 +42,15 @@ classes: wide
   .vlog-grid { grid-template-columns: 1fr; }
 }
 </style>
-## Building a Digital Twin, Behind the Screens
+## Digital Twin Production Workstations
 
-My workstation is two screens side by side. On one I run the photogrammetry software, and on the other I check the model in 3D. A 3D mouse and 3D glasses let me move through the data instead of just looking at it. The input is Mavic 3E drone imagery from a site in Sululta, Addis Ababa, Ethiopia.
+The 3D digital twin of the Addis Ababa site was produced from DJI Mavic 3E aerial imagery, processed through Agisoft Metashape and One3D. Two workstations support this 3D photogrammetry work.
 
-Hours of flight lines become a dense point cloud, then a georeferenced 3D model and orthophoto. In the end it becomes something anyone can open and explore: a live, interactive digital twin of the site.
+**Pluraview dual-screen workstation.** A dual-screen setup used together with a Stealth 3D mouse for precise navigation and measurement in 3D.
 
-[Explore the interactive 3D model →](/projects/uav-3d-terrain-reconstruction/)
+**Acer workstation with NVIDIA 3D glasses and emitter.** A single-screen setup for stereoscopic viewing of photogrammetric models.
+
+[Explore the interactive 3D model →](/projects/)
 <div class="vlog-grid">
   <div class="vlog-card" onclick="openVlogLightbox('/assets/images/vlog-1.jpg.png')"><img src="/assets/images/vlog-1.jpg.png" alt="Vlog 1"></div>
   <div class="vlog-card" onclick="openVlogLightbox('/assets/images/vlog-2.jpg.png')"><img src="/assets/images/vlog-2.jpg.png" alt="Vlog 2"></div>
