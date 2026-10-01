@@ -26,24 +26,12 @@ classes: wide
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   cursor: zoom-in;
 }
-.cert-card img {
+.cert-card img,
+.cert-card canvas {
   width: 100%;
   border-radius: 6px;
   display: block;
 }
-.cert-pdf {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  min-height: 160px;
-  text-decoration: none;
-  color: #222;
-  cursor: pointer;
-}
-.cert-pdf strong { font-size: 1em; margin-bottom: 0.4em; }
-.cert-pdf span { font-size: 0.85em; color: #2D6A4F; }
 #cert-lightbox {
   display: none;
   position: fixed;
@@ -54,10 +42,12 @@ classes: wide
   justify-content: center;
   cursor: zoom-out;
 }
-#cert-lightbox img {
+#cert-lightbox img,
+#cert-lightbox canvas {
   max-width: 92%;
   max-height: 92%;
   border-radius: 6px;
+  background: #fff;
 }
 @media (max-width: 800px) {
   .cert-grid { grid-template-columns: 1fr; }
@@ -71,9 +61,9 @@ classes: wide
   <div class="cert-card" onclick="openCertLightbox('/assets/images/esri-storytelling-gis-maps.png')"><img src="/assets/images/esri-storytelling-gis-maps.png"></div>
   <div class="cert-card" onclick="openCertLightbox('/assets/images/esri-storymaps-briefing.png')"><img src="/assets/images/esri-storymaps-briefing.png"></div>
   <div class="cert-card" onclick="openCertLightbox('/assets/images/esri-mapping-visualization.png')"><img src="/assets/images/esri-mapping-visualization.png"></div>
-  <a class="cert-card cert-pdf" href="/assets/images/esri-dividing-parcels-parcel-fabric.png.pdf" target="_blank" rel="noopener"><strong>Dividing Parcels in a Parcel Fabric Using ArcGIS Pro</strong><span>View certificate (PDF)</span></a>
-  <a class="cert-card cert-pdf" href="/assets/images/esri-imagery-mooc.png.pdf" target="_blank" rel="noopener"><strong>The ArcGIS Imagery MOOC: Foundations and Frontiers</strong><span>View certificate (PDF)</span></a>
-  <a class="cert-card cert-pdf" href="/assets/images/esri-getting-started-imagery-rs.png.pdf" target="_blank" rel="noopener"><strong>Getting Started with Imagery and Remote Sensing</strong><span>View certificate (PDF)</span></a>
+  <div class="cert-card" data-pdf="/assets/images/esri-dividing-parcels-parcel-fabric.png.pdf"><canvas></canvas></div>
+  <div class="cert-card" data-pdf="/assets/images/esri-imagery-mooc.png.pdf"><canvas></canvas></div>
+  <div class="cert-card" data-pdf="/assets/images/esri-getting-started-imagery-rs.png.pdf"><canvas></canvas></div>
 </div>
 
 <div class="cert-section-title">NASA</div>
@@ -102,17 +92,44 @@ classes: wide
   <div class="cert-card" onclick="openCertLightbox('/assets/images/other-bdu-best-exam-scorer-award.jpg')"><img src="/assets/images/other-bdu-best-exam-scorer-award.jpg"></div>
   <div class="cert-card" onclick="openCertLightbox('/assets/images/other-bdu-food-affairs-recognition.jpg')"><img src="/assets/images/other-bdu-food-affairs-recognition.jpg"></div>
   <div class="cert-card" onclick="openCertLightbox('/assets/images/other-british-council-peace-education.jpg')"><img src="/assets/images/other-british-council-peace-education.jpg"></div>
-  <div class="cert-card" onclick="openCertLightbox('/assets/images/other-ilasa.jpg')"><img src="/assets/images/other-ilasa.jpg" alt="ILASA"></div>
-  <div class="cert-card" onclick="openCertLightbox('/assets/images/other-class-representative.jpg')"><img src="/assets/images/other-class-representative.jpg" alt="Class Representative"></div>
+  <div class="cert-card" data-pdf="/assets/images/other-ilasa.jpg.pdf"><canvas></canvas></div>
+  <div class="cert-card" data-pdf="/assets/images/other-class-representative.jpg.pdf"><canvas></canvas></div>
 </div>
 
 <div id="cert-lightbox" onclick="this.style.display='none'">
   <img id="cert-lightbox-img" src="">
+  <canvas id="cert-lightbox-canvas" style="display:none"></canvas>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 <script>
+pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
 function openCertLightbox(src) {
-  document.getElementById('cert-lightbox-img').src = src;
+  document.getElementById('cert-lightbox-canvas').style.display = 'none';
+  var img = document.getElementById('cert-lightbox-img');
+  img.src = src;
+  img.style.display = 'block';
   document.getElementById('cert-lightbox').style.display = 'flex';
 }
+async function renderPdfPage(canvas, url, width) {
+  var pdf = await pdfjsLib.getDocument(url).promise;
+  var page = await pdf.getPage(1);
+  var base = page.getViewport({ scale: 1 });
+  var viewport = page.getViewport({ scale: width / base.width });
+  canvas.width = viewport.width;
+  canvas.height = viewport.height;
+  await page.render({ canvasContext: canvas.getContext('2d'), viewport: viewport }).promise;
+}
+async function openCertPdf(url) {
+  var canvas = document.getElementById('cert-lightbox-canvas');
+  document.getElementById('cert-lightbox-img').style.display = 'none';
+  canvas.style.display = 'block';
+  document.getElementById('cert-lightbox').style.display = 'flex';
+  await renderPdfPage(canvas, url, 1800);
+}
+document.querySelectorAll('.cert-card[data-pdf]').forEach(function (card) {
+  var url = card.getAttribute('data-pdf');
+  renderPdfPage(card.querySelector('canvas'), url, 900);
+  card.addEventListener('click', function () { openCertPdf(url); });
+});
 </script>
